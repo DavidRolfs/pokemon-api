@@ -1,12 +1,12 @@
 {
-  "name": "Sample-Project",
+  "name": "pokeAPI",
   "version": "1.0.0",
-  "description": "This is a scaffold for a sample project",
+  "description": "Simple project for exploring APIs",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Dani Trulls and Jared Eiseman",
+  "author": "Joe and David",
   "license": "ISC",
   "devDependencies": {
     "bower-files": "^4.0.0",

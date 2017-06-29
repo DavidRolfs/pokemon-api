@@ -1,10 +1,20 @@
 //business logic stuff for a particular module
-var ExampleModule = function(args) {
-  this.args = args; //to be replaced with constructor arguments
+var Pokemon = function() {
 };
 
-ExampleModule.prototype.examplePrototype = function() {
-  return `this is an example prototype method`;
+Pokemon.prototype.getPokemon= function(input, display) {
+  $.get("http://pokeapi.co/api/v2/pokemon/" + input + "/").then(function(response){
+    console.log(response);
+    display("Pokemon name " + response.name + " type is " + response.types[0].type.name);
+  });
 };
 
-exports.exampleModule = ExampleModule;
+
+Pokemon.prototype.getEvolve= function(input, display) {
+  $.get("http://pokeapi.co/api/v2/evolution-chain/" + input + "/").then(function(response){
+    console.log(response);
+    // display(response.chain);
+  });
+};
+
+exports.pokemonModule = Pokemon;

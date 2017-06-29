@@ -1,6 +1,6 @@
 {
-  "name": "Sample-Project",
-  "description": "This is a scaffold for a sample project",
+  "name": "pokeAPI",
+  "description": "Simple project for exploring APIs",
   "main": "index.js",
   "license": "ISC",
   "homepage": "",
